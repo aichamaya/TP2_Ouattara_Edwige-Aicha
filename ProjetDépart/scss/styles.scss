@@ -9,8 +9,11 @@ $couleurH1:blue;
 
 /*** Début des styles personnalisés ***/
 // Exemple de style personnalisé
-h1
-{
+h1 {
     color : $couleurH1;
     font-size: 4em;
+}
+
+img {
+    max-width: 100%;
 }

@@ -11982,4 +11982,8 @@ textarea.form-control-lg {
 h1, .h1 {
   color: blue;
   font-size: 4em;
+}
+
+img {
+  max-width: 100%;
 }/*# sourceMappingURL=styles.css.map */
