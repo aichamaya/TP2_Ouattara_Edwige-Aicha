@@ -18,7 +18,60 @@
 
 
 <body class="container">
-    <h1 class="mt-5 text-center">Hello World! </h1>
+    <main>
+        <h1 class="mt-5 text-center">Contact </h1>
+        <form action="https://dev.dfrmedia.com/post.php" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <label for="text-nom">Nom</label>
+                <input type="text-nom" id="text-nom" name="text-nom" placeholder="Saisir votre courriel">
+                </div>
+                <div class="col-6">
+                    <label for="text-pass">Mot de passe</label>
+                    <input type="text-pass" id="text-pass" name="text-pass" placeholder="Entrer votre mot de passe">
+                </div>
+            </div>
+                <div class="row">
+                    <label for="text-adres">Adress</label>
+                    <input type="text-adres" id="text-adres" name="text-adres" placeholder="Saisir votre adresse">
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="text-vil">Ville</label>
+                        <input type="text-vil" id="text-vil" name="text-vil" placeholder="Saisir votre ville">
+                    </div>
+                    <div>
+                        <select name="sel-prov" id="sel-prov">
+                            <option value="" selected>Faire un choix</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="Colombie-Britannique">Colombie-Britannique</option>
+                            <option value="Nouvelle-Écosse">Nouvelle-Écosse</option>
+                            <option value="Nunavut">Nunavut</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador</option>
+                            <option value="Territoires du Nord-Ouest">Territoires du Nord-Ouest</option>
+                            <option value="Yukon">Yukon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="text-cod">Code postal</label>
+                        <input type="text-cod" id="text-cod" name="text-cod" placeholder="6 caractères">
+                    </div>
+                
+                </div>
+                <div>
+                    <textarea name="text-message" id="text-message">Message</textarea>
+                </div>
+                
+               
+            
+        </form>
+
+    </main>
+   
 
     <!-- Scripts de Bootstrap NE PAS RETIRER -->
     <!------------------------------------------------------------------------------------
