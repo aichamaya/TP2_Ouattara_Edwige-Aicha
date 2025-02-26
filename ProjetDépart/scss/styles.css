@@ -11986,4 +11986,8 @@ h1, .h1 {
 
 img {
   max-width: 100%;
+}
+
+nav li {
+  display: inline-block;
 }/*# sourceMappingURL=styles.css.map */
