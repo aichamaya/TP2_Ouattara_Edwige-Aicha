@@ -1,6 +1,6 @@
 /** VOS $VARIABLES Sass ici avant l'importation**/
 // Exemple de variable
-$couleurH1:blue;
+$primary: #ed1b76;
 
 
 
@@ -9,15 +9,19 @@ $couleurH1:blue;
 
 /*** Début des styles personnalisés ***/
 // Exemple de style personnalisé
-h1 {
-    color : $couleurH1;
-    font-size: 4em;
-}
-
 img {
     max-width: 100%;
 }
 
+header img {
+    width: 250px;
+}
+
 nav li {
     display: inline-block;
+    margin-right: 1rem;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
