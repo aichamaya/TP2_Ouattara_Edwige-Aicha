@@ -11997,4 +11997,28 @@ nav li {
 nav li a {
   text-decoration: none;
   font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
 }/*# sourceMappingURL=styles.css.map */
