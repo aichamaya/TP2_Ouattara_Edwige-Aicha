@@ -2,90 +2,122 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <!-- Pour s'assurer d'un affichage correct sur mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pour s'assurer d'un affichage correct sur mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
-    <link rel="stylesheet" href="scss/styles.css">
-    <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
+  <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
+  <link rel="stylesheet" href="scss/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
     qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
-
-    <link rel="icon" href="favicon.ico" />
-    <title>Nom du site | Accueil</title>
+  <link rel="icon" href="favicon.ico" />
+  <title>Nom du site | Accueil</title>
 </head>
 
 
 <body>
-    <header class="py-4 bg-secondary">
-        <div class="container d-flex justify-content-between align-items-start">
-            <img src="images/logo.svg" alt="logo Squid Game">
-            <a class="btn btn-primary" href="#">Ouvrir une session</a>
-        </div>
-    </header>
-    <nav>
-      <div class="container">
-        <ul class="ps-0 py-2">
-          <li class="fw-bolder fs-5 text-primary ms-0 my-0">NAVIGATION:</li>
-          <li><a href="index.html">ACCUEIL</a></li>
-          <li><a href="personnages.html">PERSONNAGES</a></li>
-          <li><a href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+  <header class="py-4 bg-secondary">
+    <div class="container d-flex justify-content-between align-items-start">
+      <img src="images/logo.svg" alt="logo Squid Game">
+      <a class="btn btn-primary" href="#">Ouvrir une session</a>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul class="ps-0 py-2">
+        <li class="fw-bolder fs-5 text-primary ms-0 my-0">NAVIGATION:</li>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="personnages.html">PERSONNAGES</a></li>
+        <li><a href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="row">
+      <div class="col-6">
+        <h1>Bienvenue</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque harum delectus esse, totam deleniti.
+          Blanditiis voluptatibus qui modi nemo velit sed ab nihil, eum nisi similique corrupti consectetur iste libero
+          ipsum totam vero, excepturi autem ad! Eum iste blanditiis asperiores numquam unde! Quam dolorem nulla totam
+          repellat exercitationem necessitatibus quo eius saepe! Rerum quas perferendis maxime numquam eveniet, dicta
+          provident commodi sint reprehenderit veniam enim facilis ad velit magnam vel, ipsum quaerat, ea eius voluptate
+          aliquid quis sunt. Rerum sit aliquam repellendus, earum ducimus deserunt nisi delectus saepe nesciunt quia, et
+          quasi, porro culpa at eligendi ea molestiae? Tempore.</p>
       </div>
-    </nav>
-    <main class="container">
-        <div class="row">
-            <div class="col-6">
-                <h1>Bienvenue</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque harum delectus esse, totam deleniti.
-                  Blanditiis voluptatibus qui modi nemo velit sed ab nihil, eum nisi similique corrupti consectetur iste libero
-                  ipsum totam vero, excepturi autem ad! Eum iste blanditiis asperiores numquam unde! Quam dolorem nulla totam
-                  repellat exercitationem necessitatibus quo eius saepe! Rerum quas perferendis maxime numquam eveniet, dicta
-                  provident commodi sint reprehenderit veniam enim facilis ad velit magnam vel, ipsum quaerat, ea eius voluptate
-                  aliquid quis sunt. Rerum sit aliquam repellendus, earum ducimus deserunt nisi delectus saepe nesciunt quia, et
-                  quasi, porro culpa at eligendi ea molestiae? Tempore.</p>
+      <div class="col-6">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/bootstrap-logo-shadow.png" class="d-block w-100" alt="...">
             </div>
-            <div class="col-6">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="images/bootstrap-logo-shadow.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
+  <footer class="py-4 bg-secondary">
+    <div class="container text-white text-center">
+      <h2>Pour nous joindre</h2>
+      <div class="row gap-2 justify-content-between text-black py-3 mb-3 border-bottom">
+        <div class="col-md-3 bg-white rounded-5 p-3">
+          <i class="bi bi-discord text-black"></i>
+          <p>Discord</p>
+          <a href="https://discord.com/" target="_blank">https://discord.com/</a>
+        </div>
+        <div class="col-md-3 bg-white rounded-5 p-3">
+          <i class="bi bi-instagram text-black"></i>
+          <p>Instagram</p>
+          <a href="www.instagram.com/x" target="_blank">www.instagram.com/x</a>
+        </div>
+        <div class="col-md-3 bg-white rounded-5 p-3">
+          <i class="bi bi-facebook text-black"></i>
+          <p>Facebook</p>
+          <a href="www.facebook.com/xx" target="_blank">www.facebook.com/xx</a>
+        </div>
+      </div>
+      <p class="m-0">Concepteurs du site : William Desmarquis / Edwige Aïcha Ouattara</p>
+    </div>
+  </footer>
 
-    <!-- Scripts de Bootstrap NE PAS RETIRER -->
-    <!------------------------------------------------------------------------------------
+  <!-- Scripts de Bootstrap NE PAS RETIRER -->
+  <!------------------------------------------------------------------------------------
         Si on a besoin des éléments interactifs de Bootstrap, on doit utiliser au minimum
         le 2e script suivant (bootstrap.min.js) et parfois le 1er en plus (Popper)
         intégrés dans cet ordre.
     ------------------------------------------------------------------------------------>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
