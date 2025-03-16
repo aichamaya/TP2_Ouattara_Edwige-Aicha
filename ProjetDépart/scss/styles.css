@@ -11987,18 +11987,6 @@ header img {
   width: 250px;
 }
 
-nav {
-  background-color: rgb(233, 233, 233);
-}
-nav li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-nav li a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
 main form {
   display: flex;
   flex-direction: column;
