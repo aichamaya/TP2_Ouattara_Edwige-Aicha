@@ -22,8 +22,30 @@
   <header class="py-4 bg-secondary">
     <div class="container d-flex justify-content-between align-items-start">
       <img src="images/logo.svg" alt="logo Squid Game">
-      <a class="btn btn-primary" href="#">Ouvrir une session</a>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Ouvrir une session
+      </button>
     </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ouvrir une session</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Cette section est en développement.</p>
+            <p>Vous pouvez écrire à <a href="mailto:info@monsiteweb.com">info@monsiteweb.com</a> pour toute assistance.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </header>
   <nav>
     <div class="container">
