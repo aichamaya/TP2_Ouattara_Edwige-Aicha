@@ -13,12 +13,13 @@
   <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
     qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
 
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.svg"/>
   <title>Nom du site | Nom de la page</title>
 </head>
 
 
 <body>
+  <a href="#contenu"> <span class="texte-pour-lecteur">Aller au contenu principal</span> </a>
   <header class="py-4 bg-secondary">
     <div class="container">
       <div class="row row-gap-4 justify-content-between align-items-start">
@@ -48,10 +49,11 @@
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-expand-md bg-light">
+  <nav class="navbar navbar-expand-md bg-light" aria-label="Navigation">
     <div class="container">
       <p class="navbar-brand fw-bolder fs-5 text-primary ms-0 my-0">NAVIGATION:</p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,7 +65,8 @@
             <a class="nav-link fw-bold text-decoration-none text-primary" href="personnages.html">PERSONNAGES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-none text-primary" href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a>
+            <a class="nav-link fw-bold text-decoration-none text-primary"
+              href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold text-decoration-none text-primary" href="contact.html">CONTACT</a>
@@ -76,7 +79,7 @@
     <div class="row py-3 align-items-start">
       <aside class="col-md-3 p-3">
         <p class="fw-semibold fs-3">Newsletter</p>
-        <form action="">
+        <form action="#" method="post" aria-label="Newsletter">
           <div class="mb-3">
             <label for="txt-prenom" class="form-label">Prénom</label>
             <input class="form-control" type="text" id="txt-prenom" name="txt-prenom" required>
@@ -96,9 +99,9 @@
           <input class="btn btn-primary" type="submit" value="Soumettre">
         </form>
       </aside>
-      <main class="col-md-9">
+      <main class="col-md-9" id="contenu">
         <h1>Description des personnages</h1>
-        <section>
+        <section id="personnage-1">
           <h2>Abdul Ali</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in, hic error voluptatibus recusandae
             quo maiores provident totam temporibus necessitatibus perspiciatis illum sit, velit explicabo eligendi eum
@@ -108,9 +111,9 @@
             architecto reprehenderit, odit perspiciatis! Eaque doloribus expedita ab, repellat corporis tempora rem ad
             ex natus inventore voluptatem ut officiis aliquam, libero itaque labore vitae aut impedit? Architecto aut
             deserunt reprehenderit nobis!</p>
-            <img src="images/Abdul Ali.jpg" alt="Abdul Ali">
+          <img src="images/Abdul Ali.jpg" alt="Abdul Ali">
         </section>
-        <section>
+        <section id="personnage-2">
           <h2>Oh II-nam</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in, hic error voluptatibus recusandae
             quo maiores provident totam temporibus necessitatibus perspiciatis illum sit, velit explicabo eligendi eum
@@ -120,9 +123,9 @@
             architecto reprehenderit, odit perspiciatis! Eaque doloribus expedita ab, repellat corporis tempora rem ad
             ex natus inventore voluptatem ut officiis aliquam, libero itaque labore vitae aut impedit? Architecto aut
             deserunt reprehenderit nobis!</p>
-            <img src="images/Oh II-nam.jpg" alt="Oh II-nam">
+          <img src="images/Oh II-nam.jpg" alt="Oh II-nam">
         </section>
-        <section>
+        <section id="personnage-3">
           <h2>Front Man</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in, hic error voluptatibus recusandae
             quo maiores provident totam temporibus necessitatibus perspiciatis illum sit, velit explicabo eligendi eum
@@ -132,9 +135,9 @@
             architecto reprehenderit, odit perspiciatis! Eaque doloribus expedita ab, repellat corporis tempora rem ad
             ex natus inventore voluptatem ut officiis aliquam, libero itaque labore vitae aut impedit? Architecto aut
             deserunt reprehenderit nobis!</p>
-            <img src="images/Front Man.png" alt="Front Man">
+          <img src="images/Front Man.png" alt="Front Man">
         </section>
-        <section>
+        <section id="personnage-4">
           <h2>Jang Deok-su</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in, hic error voluptatibus recusandae
             quo maiores provident totam temporibus necessitatibus perspiciatis illum sit, velit explicabo eligendi eum
@@ -144,9 +147,9 @@
             architecto reprehenderit, odit perspiciatis! Eaque doloribus expedita ab, repellat corporis tempora rem ad
             ex natus inventore voluptatem ut officiis aliquam, libero itaque labore vitae aut impedit? Architecto aut
             deserunt reprehenderit nobis!</p>
-            <img src="images/Jang Deok-su.jpg" alt="Jang Deok-su">
+          <img src="images/Jang Deok-su.jpg" alt="Jang Deok-su">
         </section>
-        <section>
+        <section id="personnage-5">
           <h2>Seong Gi-hun</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in, hic error voluptatibus recusandae
             quo maiores provident totam temporibus necessitatibus perspiciatis illum sit, velit explicabo eligendi eum
@@ -156,9 +159,9 @@
             architecto reprehenderit, odit perspiciatis! Eaque doloribus expedita ab, repellat corporis tempora rem ad
             ex natus inventore voluptatem ut officiis aliquam, libero itaque labore vitae aut impedit? Architecto aut
             deserunt reprehenderit nobis!</p>
-            <img src="images/Seong Gi-hun.png" alt="Seong Gi-hun">
+          <img src="images/Seong Gi-hun.png" alt="Seong Gi-hun">
         </section>
-        <section>
+        <section id="personnage-6">
           <h2>Kang Sae-byeok</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus in, hic error voluptatibus recusandae
             quo maiores provident totam temporibus necessitatibus perspiciatis illum sit, velit explicabo eligendi eum
@@ -168,7 +171,7 @@
             architecto reprehenderit, odit perspiciatis! Eaque doloribus expedita ab, repellat corporis tempora rem ad
             ex natus inventore voluptatem ut officiis aliquam, libero itaque labore vitae aut impedit? Architecto aut
             deserunt reprehenderit nobis!</p>
-            <img src="images/Kang Sae-byeok.jpg" alt="Kang Sae-byeok">
+          <img src="images/Kang Sae-byeok.jpg" alt="Kang Sae-byeok">
         </section>
       </main>
     </div>

@@ -2,23 +2,24 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <!-- Pour s'assurer d'un affichage correct sur mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pour s'assurer d'un affichage correct sur mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
-    <link rel="stylesheet" href="scss/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
+  <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
+  <link rel="stylesheet" href="scss/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
     qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
 
-    <link rel="icon" href="favicon.ico" />
-    <title>Nom du site | Nom de la page</title>
+  <link rel="icon" href="favicon.svg"/>
+  <title>Nom du site | Nom de la page</title>
 </head>
 
 
 <body>
+  <a href="#contenu"> <span class="texte-pour-lecteur">Aller au contenu principal</span> </a>
   <header class="py-4 bg-secondary">
     <div class="container">
       <div class="row row-gap-4 justify-content-between align-items-start">
@@ -48,10 +49,11 @@
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-expand-md bg-light">
+  <nav class="navbar navbar-expand-md bg-light" aria-label="Navigation">
     <div class="container">
       <p class="navbar-brand fw-bolder fs-5 text-primary ms-0 my-0">NAVIGATION:</p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,7 +65,8 @@
             <a class="nav-link fw-bold text-decoration-none text-primary" href="personnages.html">PERSONNAGES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-none text-primary" href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a>
+            <a class="nav-link fw-bold text-decoration-none text-primary"
+              href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold text-decoration-none text-primary" href="contact.html">CONTACT</a>
@@ -72,99 +75,103 @@
       </div>
     </div>
   </nav>
-    <div class="container">
-        <div class="row py-3 align-items-start">
-            <aside class="col-md-3 p-3">
-                <p class="fw-semibold fs-3">Newsletter</p>
-                <form action="">
-                    <div class="mb-3">
-                        <label for="txt-prenom" class="form-label">Prénom</label>
-                        <input class="form-control" type="text" id="txt-prenom" name="txt-prenom" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="txt-nom" class="form-label">Nom</label>
-                        <input class="form-control" type="text" id="txt-nom" name="txt-nom" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email-newsletter" class="form-label">Courriel</label>
-                        <input class="form-control" type="email" id="email-newsletter" name="email-newsletter" required>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input class="form-check-input" type="checkbox" id="chk-newsletter" name="chk-newsletter">
-                        <label class="form-check-label" for="chk-newsletter">J'accepte de recevoir des communications</label>
-                    </div>
-                    <input class="btn btn-primary" type="submit" value="Soumettre">
-                </form>
-            </aside>
-            <main class="col-md-9">
-                <h1>Liste des personnages</h1>
-                <div class="row row-gap-4 py-3">
-                    <section class="col-md-4">
-                        <img src="images/Abdul Ali.jpg" alt="Abdul Ali">
-                        <h2>Abdul Ali</h2>
-                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
-                    </section>
-                    <section class="col-md-4">
-                        <img src="images/Oh II-nam.jpg" alt="Oh II-nam">
-                        <h2>Oh II-nam</h2>
-                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
-                    </section>
-                    <section class="col-md-4">
-                        <img src="images/Front Man.png" alt="Front Man">
-                        <h2>Front Man</h2>
-                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
-                    </section>
-                    <section class="col-md-4">
-                        <img src="images/Jang Deok-su.jpg" alt="Jang Deok-su">
-                        <h2>Jang Deok-su</h2>
-                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
-                    </section>
-                    <section class="col-md-4">
-                        <img src="images/Seong Gi-hun.png" alt="Seong Gi-hun">
-                        <h2>Seong Gi-hun</h2>
-                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
-                    </section>
-                    <section class="col-md-4">
-                        <img src="images/Kang Sae-byeok.jpg" alt="Kang Sae-byeok">
-                        <h2>Kang Sae-byeok</h2>
-                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
-                    </section>
-                </div>
-            </main>
-        </div>
-    </div>
-    <footer class="py-4 bg-secondary">
-        <div class="container text-white text-center">
-          <h2>Pour nous joindre</h2>
-          <div class="row gap-2 justify-content-between text-black py-3 mb-3 border-bottom">
-            <div class="col-md-3 bg-white rounded-5 p-3">
-              <i class="bi bi-discord text-black"></i>
-              <p>Discord</p>
-              <a href="https://discord.com/" target="_blank">https://discord.com/</a>
-            </div>
-            <div class="col-md-3 bg-white rounded-5 p-3">
-              <i class="bi bi-instagram text-black"></i>
-              <p>Instagram</p>
-              <a href="www.instagram.com/x" target="_blank">www.instagram.com/x</a>
-            </div>
-            <div class="col-md-3 bg-white rounded-5 p-3">
-              <i class="bi bi-facebook text-black"></i>
-              <p>Facebook</p>
-              <a href="www.facebook.com/xx" target="_blank">www.facebook.com/xx</a>
-            </div>
+  <div class="container">
+    <div class="row py-3 align-items-start">
+      <aside class="col-md-3 p-3">
+        <p class="fw-semibold fs-3">Newsletter</p>
+        <form action="#" method="post" aria-label="Newsletter">
+          <div class="mb-3">
+            <label for="txt-prenom" class="form-label">Prénom</label>
+            <input class="form-control" type="text" id="txt-prenom" name="txt-prenom" required>
           </div>
-          <p class="m-0">Concepteurs du site : William Desmarquis / Edwige Aïcha Ouattara</p>
+          <div class="mb-3">
+            <label for="txt-nom" class="form-label">Nom</label>
+            <input class="form-control" type="text" id="txt-nom" name="txt-nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="email-newsletter" class="form-label">Courriel</label>
+            <input class="form-control" type="email" id="email-newsletter" name="email-newsletter" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" id="chk-newsletter" name="chk-newsletter">
+            <label class="form-check-label" for="chk-newsletter">J'accepte de recevoir des communications</label>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Soumettre">
+        </form>
+      </aside>
+      <main class="col-md-9" id="contenu">
+        <h1>Liste des personnages</h1>
+        <div class="row row-gap-4 py-3">
+          <section class="col-md-4">
+            <img src="images/Abdul Ali.jpg" alt="Abdul Ali">
+            <h2>Abdul Ali</h2>
+            <a href="description-personnages.html#personnage-1" class="btn btn-primary">Description complète</a>
+          </section>
+          <section class="col-md-4">
+            <img src="images/Oh II-nam.jpg" alt="Oh II-nam">
+            <h2>Oh II-nam</h2>
+            <a href="description-personnages.html#personnage-2" class="btn btn-primary">Description complète</a>
+          </section>
+          <section class="col-md-4">
+            <img src="images/Front Man.png" alt="Front Man">
+            <h2>Front Man</h2>
+            <a href="description-personnages.html#personnage-3" class="btn btn-primary">Description complète</a>
+          </section>
+          <section class="col-md-4">
+            <img src="images/Jang Deok-su.jpg" alt="Jang Deok-su">
+            <h2>Jang Deok-su</h2>
+            <a href="description-personnages.html#personnage-4" class="btn btn-primary">Description complète</a>
+          </section>
+          <section class="col-md-4">
+            <img src="images/Seong Gi-hun.png" alt="Seong Gi-hun">
+            <h2>Seong Gi-hun</h2>
+            <a href="description-personnages.html#personnage-5" class="btn btn-primary">Description complète</a>
+          </section>
+          <section class="col-md-4">
+            <img src="images/Kang Sae-byeok.jpg" alt="Kang Sae-byeok">
+            <h2>Kang Sae-byeok</h2>
+            <a href="description-personnages.html#personnage-6" class="btn btn-primary">Description complète</a>
+          </section>
         </div>
-      </footer>
+      </main>
+    </div>
+  </div>
+  <footer class="py-4 bg-secondary">
+    <div class="container text-white text-center">
+      <h2>Pour nous joindre</h2>
+      <div class="row gap-2 justify-content-between text-black py-3 mb-3 border-bottom">
+        <div class="col-md-3 bg-white rounded-5 p-3">
+          <i class="bi bi-discord text-black"></i>
+          <p>Discord</p>
+          <a href="https://discord.com/" target="_blank">https://discord.com/</a>
+        </div>
+        <div class="col-md-3 bg-white rounded-5 p-3">
+          <i class="bi bi-instagram text-black"></i>
+          <p>Instagram</p>
+          <a href="www.instagram.com/x" target="_blank">www.instagram.com/x</a>
+        </div>
+        <div class="col-md-3 bg-white rounded-5 p-3">
+          <i class="bi bi-facebook text-black"></i>
+          <p>Facebook</p>
+          <a href="www.facebook.com/xx" target="_blank">www.facebook.com/xx</a>
+        </div>
+      </div>
+      <p class="m-0">Concepteurs du site : William Desmarquis / Edwige Aïcha Ouattara</p>
+    </div>
+  </footer>
 
-    <!-- Scripts de Bootstrap NE PAS RETIRER -->
-    <!------------------------------------------------------------------------------------
+  <!-- Scripts de Bootstrap NE PAS RETIRER -->
+  <!------------------------------------------------------------------------------------
         Si on a besoin des éléments interactifs de Bootstrap, on doit utiliser au minimum
         le 2e script suivant (bootstrap.min.js) et parfois le 1er en plus (Popper)
         intégrés dans cet ordre.
     ------------------------------------------------------------------------------------>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

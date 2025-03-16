@@ -13,12 +13,13 @@
   <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
     qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
 
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.svg"/>
   <title>Nom du site | Nom de la page</title>
 </head>
 
 
 <body>
+  <a href="#contenu"> <span class="texte-pour-lecteur">Aller au contenu principal</span> </a>
   <header class="py-4 bg-secondary">
     <div class="container">
       <div class="row row-gap-4 justify-content-between align-items-start">
@@ -48,7 +49,7 @@
       </div>
     </div>
   </header>
-  <nav class="navbar navbar-expand-md bg-light">
+  <nav class="navbar navbar-expand-md bg-light" aria-label="Navigation">
     <div class="container">
       <p class="navbar-brand fw-bolder fs-5 text-primary ms-0 my-0">NAVIGATION:</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +78,7 @@
     <div class="row py-3 align-items-start">
       <aside class="col-md-3 p-3">
         <p class="fw-semibold fs-3">Newsletter</p>
-        <form action="">
+        <form action="#" method="post" aria-label="Newsletter">
           <div class="mb-3">
             <label for="txt-prenom" class="form-label">Prénom</label>
             <input class="form-control" type="text" id="txt-prenom" name="txt-prenom" required>
@@ -97,9 +98,9 @@
           <input class="btn btn-primary" type="submit" value="Soumettre">
         </form>
       </aside>
-      <main class="col-md-9">
+      <main class="col-md-9" id="contenu">
         <h1 class="mt-5 text-center">Contact </h1>
-        <form action="https://dev.dfrmedia.com/post.php" method="post">
+        <form action="https://dev.dfrmedia.com/post.php" method="post" aria-label="Contact">
 
 
           <div class="row">
