@@ -19,6 +19,84 @@
 
 
 <body>
+    <header class="py-4 bg-secondary">
+        <div class="container d-flex justify-content-between align-items-start">
+          <img src="images/logo.svg" alt="logo Squid Game">
+          <a class="btn btn-primary" href="#">Ouvrir une session</a>
+        </div>
+      </header>
+      <nav>
+        <div class="container">
+          <ul class="ps-0 py-2">
+            <li class="fw-bolder fs-5 text-primary ms-0 my-0">NAVIGATION:</li>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="personnages.html">PERSONNAGES</a></li>
+            <li><a href="description-personnages.html">DESCRIPTION DES PERSONNAGES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row py-3 align-items-start">
+            <aside class="col-3 p-3">
+                <p class="fw-semibold fs-3">Newsletter</p>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="txt-prenom" class="form-label">Prénom</label>
+                        <input class="form-control" type="text" id="txt-prenom" name="txt-prenom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-nom" class="form-label">Nom</label>
+                        <input class="form-control" type="text" id="txt-nom" name="txt-nom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-newsletter" class="form-label">Courriel</label>
+                        <input class="form-control" type="email" id="email-newsletter" name="email-newsletter" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" type="checkbox" id="chk-newsletter" name="chk-newsletter">
+                        <label class="form-check-label" for="chk-newsletter">J'accepte de recevoir des communications</label>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Soumettre">
+                </form>
+            </aside>
+            <main class="col-9">
+                <h1>Liste des personnages</h1>
+                <div class="row row-gap-4 py-3">
+                    <section class="col-md-4">
+                        <img src="images/Abdul Ali.jpg" alt="Abdul Ali">
+                        <h2>Abdul Ali</h2>
+                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
+                    </section>
+                    <section class="col-md-4">
+                        <img src="images/Oh II-nam.jpg" alt="Oh II-nam">
+                        <h2>Oh II-nam</h2>
+                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
+                    </section>
+                    <section class="col-md-4">
+                        <img src="images/Front Man.png" alt="Front Man">
+                        <h2>Front Man</h2>
+                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
+                    </section>
+                    <section class="col-md-4">
+                        <img src="images/Jang Deok-su.jpg" alt="Jang Deok-su">
+                        <h2>Jang Deok-su</h2>
+                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
+                    </section>
+                    <section class="col-md-4">
+                        <img src="images/Seong Gi-hun.png" alt="Seong Gi-hun">
+                        <h2>Seong Gi-hun</h2>
+                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
+                    </section>
+                    <section class="col-md-4">
+                        <img src="images/Kang Sae-byeok.jpg" alt="Kang Sae-byeok">
+                        <h2>Kang Sae-byeok</h2>
+                        <a href="description-personnages.html" class="btn btn-primary">Description complète</a>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
     <footer class="py-4 bg-secondary">
         <div class="container text-white text-center">
           <h2>Pour nous joindre</h2>
