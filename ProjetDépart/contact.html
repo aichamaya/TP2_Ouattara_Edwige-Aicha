@@ -98,33 +98,33 @@
           <input class="btn btn-primary" type="submit" value="Soumettre">
         </form>
       </aside>
-      <main class="col-md-9" id="contenu">
-        <h1 class="mt-5 text-center">Contact </h1>
+      <main class="col-md-9 ps-4" id="contenu">
+        <h1 class="mt-5">Contact </h1>
         <form action="https://dev.dfrmedia.com/post.php" method="post" aria-label="Contact">
 
 
           <div class="row">
-            <div class="col-6 mb-3">
-              <label for="text-nom">Courriel</label>
-              <input type="text-nom" id="text-nom" name="text-nom" placeholder="Saisir votre courriel">
+            <div class="col-md-6 mb-3">
+              <label for="text-nom" class="form-label">Courriel</label>
+              <input class="form-control" type="text-nom" id="text-nom" name="text-nom" placeholder="Saisir votre courriel">
             </div> <br>
-            <div class="col-6 mb-3">
-              <label for="text-pass">Mot de passe</label>
-              <input type="text-pass" id="text-pass" name="text-pass" placeholder="Entrer votre mot de passe">
+            <div class="col-md-6 mb-3">
+              <label for="text-pass" class="form-label">Mot de passe</label>
+              <input class="form-control" type="text-pass" id="text-pass" name="text-pass" placeholder="Entrer votre mot de passe">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="text-adres">Adress</label>
-            <input type="text-adres" id="text-adres" name="text-adres" placeholder="Saisir votre adresse">
+          <div class="mb-3">
+            <label for="text-adres" class="form-label">Adresse</label>
+            <input class="form-control" type="text-adres" id="text-adres" name="text-adres" placeholder="Saisir votre adresse">
           </div>
           <div class="row">
-            <div class="col-6 mb-3">
-              <label class="d-block" for="text-vil">Ville</label>
-              <input type="text-vil" id="text-vil" name="text-vil" placeholder="Saisir votre ville">
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="text-vil">Ville</label>
+              <input class="form-control" type="text-vil" id="text-vil" name="text-vil" placeholder="Saisir votre ville">
             </div>
-            <div class="col-3 mb-3">
-              <label class="d-block" for="txt-pro">Povince</label>
-              <select name="sel-prov" id="sel-prov">
+            <div class="col-md-3 mb-3">
+              <label class="form-label" for="txt-pro">Povince</label>
+              <select class="form-control" name="sel-prov" id="sel-prov">
                 <option value="" selected>Faire un choix</option>
                 <option value="Quebec">Quebec</option>
                 <option value="Ontario">Ontario</option>
@@ -139,22 +139,23 @@
                 <option value="Yukon">Yukon</option>
               </select>
             </div>
-            <div class="col-3 mb-3 d-block">
-              <label for="text-cod">Code postal</label>
-              <input type="text-cod" id="text-cod" name="text-cod" placeholder="6 caractères">
+            <div class="col-md-3 mb-3">
+              <label class="form-label" for="text-cod">Code postal</label>
+              <input class="form-control" type="text-cod" id="text-cod" name="text-cod" placeholder="6 caractères">
             </div>
 
           </div>
           <div>
-            <textarea name="text-message" id="text-message">Message</textarea>
+            <label class="form-label" for="text-message">Message</label>
+            <textarea class="form-control" name="text-message" id="text-message"></textarea>
           </div>
           <div class="form-check mb-3">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Recevoir un courriel</label>
           </div>
           <div>
-            <button type="button" class="btn btn-primary">Effacer</button>
-            <button type="button" class="btn btn-primary">Envoyer</button>
+            <input type="reset" value="Effacer" class="btn btn-primary">
+            <input type="submit" value="Envoyer" class="btn btn-primary">
           </div>
 
 
